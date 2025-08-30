@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/EnsenaPe',
+  base: '/EnsenaPe/',
   plugins: [react()],
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
 })
